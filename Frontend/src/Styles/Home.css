@@ -1,0 +1,52 @@
+:root {
+    --container--bg: #cbc082de;
+    --btn--bg: #e1d7d7de;
+    --btnHover--bg: #afa6a6de;
+}
+.dark {
+    --container--bg: #525542de;
+    --btn--bg: #5f5f5fde;
+    --btnHover--bg: #312f2fde;
+}
+.container {
+    background-color: var(--container--bg);
+    width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-container {
+}
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnContainer button {
+    border: none;
+    margin: 10px;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: var(--btn--bg);
+    transition: 0.4s;
+}
+.btnContainer button:hover {
+    background-color: var(--btnHover--bg);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 300px;
+    }
+    .btnContainer {
+        flex-direction: column;
+    }
+    .btnContainer button {
+        width: 70%;
+    }
+}

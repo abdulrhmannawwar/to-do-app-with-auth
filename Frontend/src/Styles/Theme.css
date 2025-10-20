@@ -1,0 +1,19 @@
+:root {
+    /* Backgrounds */
+    --color-bg: #dfd0b8;
+    --color-bg-alt: #e5e5e5;
+
+    /* Text */
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+}
+
+.dark {
+    /* Backgrounds */
+    --color-bg: #816f59;
+    --color-bg-alt: #1f2937;
+
+    /* Text */
+    --color-text: #c4c4c4;
+    --color-text-light: #9ca3af;
+}

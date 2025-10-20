@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Marhey:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+    --btn-text: #c4c4c4;
+    --update: #e0e033;
+    --color-text: #1f2937;
+}
+.dark {
+    --btn-text: #1f2937;
+    --update: #989800c0;
+    --color-text: #ffffff;
+}
+
+.todos-container {
+    font-family: "Marhey", sans-serif;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-repeat: no-repeat;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s;
+}
+
+.dark .img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.todos {
+    min-height: 50px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.todo {
+    position: relative;
+    color: var(--color-text);
+    height: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 25px;
+    justify-content: space-between;
+    width: 100%;
+}
+.add-todo {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: var(--btn--bg);
+    transition: 0.3s;
+}
+.add-todo:hover {
+    background-color: var(--btnHover--bg);
+}
+.todo-input {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    color: var(--color-text);
+    background-color: var(--btn--bg);
+}
+.pagination {
+    font-size: 15px;
+    margin: 10px 0 0;
+    display: flex;
+    color: var(--color-text);
+    justify-content: space-between;
+    min-width: 250px;
+}
+.add-process {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 90%;
+    padding: 5px;
+    align-items: center;
+}
+.title {
+    min-width: 50px;
+    transition: color 0.3s ease;
+    line-height: 1.2;
+}
+.title.done {
+    color: #aaa;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #ff4d4d;
+    transition: all 0.3s ease;
+}
+.confirm,
+.cancel {
+    margin: 5px;
+    padding: 2px 5px;
+    transition: 0.3s;
+}
+.confirm:hover {
+    background-color: green;
+    color: var(--btn-text);
+}
+.cancel:hover {
+    background-color: red;
+    color: var(--btn-text);
+}
+.delete {
+    background-color: red;
+}
+.update {
+    background-color: var(--update);
+}
+.update,
+.delete,
+.done {
+    margin: 2px;
+    padding: 2px;
+    color: var(--color-text);
+}
+.logout {
+    position: absolute;
+    padding: 10px 20px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+.logout:hover {
+    background-color: red;
+}
+@media (max-width: 600px) {
+    .todos-container {
+        width: 90%;
+        margin: 110px auto 0;
+    }
+    .todo {
+        font-size: 20px;
+    }
+    .todo-input {
+        margin: 10px;
+    }
+}

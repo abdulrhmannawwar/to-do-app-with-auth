@@ -1,0 +1,24 @@
+.login-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container input {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+.login-container input:focus {
+    outline: none;
+}
+.login-container button {
+    border: none;
+    margin: 10px;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: var(--btn--bg);
+    transition: 0.3s;
+}
+.login-container button:hover {
+    background-color: var(--btnHover--bg);
+}

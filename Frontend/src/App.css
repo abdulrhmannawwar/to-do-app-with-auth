@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Space+Grotesk:wght@300..700&display=swap");
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 20px;
+    font-family: "Jersey 15", sans-serif;
+    transition: 0.3s;
+}
+
+.switch-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--btn--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.switch-btn i {
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+.switch-btn i.fa-sun {
+    transform: rotate(360deg);
+    color : white;
+}
+
+.switch-btn i.fa-moon {
+    transform: rotate(-360deg);
+    color: #000000; 
+}
+button {
+    cursor: pointer;
+    background-color: var(--btn--bg);
+    color: var(--color-text);
+    font-family: "Jersey 15", sans-serif;
+}
+::placeholder {
+    font-family: "Jersey 15", sans-serif;
+    color: var(--color-text);
+}
+input {
+    font-family: "Jersey 15", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+@media (max-width: 600px) {
+    .switch-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+}

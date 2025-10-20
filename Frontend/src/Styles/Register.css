@@ -1,0 +1,24 @@
+.register-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container input {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+.register-container input:focus {
+    outline: none;
+}
+.register-container button {
+    border: none;
+    margin: 10px;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: var(--btn--bg);
+    transition: 0.3s;
+}
+.register-container button:hover {
+    background-color: var(--btnHover--bg);
+}
